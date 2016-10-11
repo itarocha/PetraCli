@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-navbar secondary>
+    <ion-title>Seções</ion-title>
+    <button menuToggle><ion-icon name="menu"></ion-icon></button>
+  </ion-navbar>
+
+  <ion-toolbar no-border-bottom>
+    <b>{{rep.nomemp}}</b>
+  </ion-toolbar>
+
+  <!-- <ion-toolbar no-border-top>
+    <button itamar (click)="makeGetRequest()">GET Request</button>
+    <button favorite (click)="makePostRequest()">POST Request</button>
+  </ion-toolbar> -->
+</ion-header>
+
+
+<ion-content class="padding">
+
+  <!-- <ion-list>
+    <ion-item *ngFor="let pessoa of pessoas">
+      <h2>{{pessoa.nome}}</h2>
+      <p>{{pessoa.sobrenome}},{{pessoa.idade}}</p>
+    </ion-item>
+  </ion-list> -->
+  <ion-list>
+    <ion-item *ngFor="let secao of secoes" (click)="navigate(secao.codsec, secao.dscsec)">
+      <h4>{{secao.dscsec}}</h4>
+      <p>#{{secao.codsec}}</p>
+    </ion-item>
+  </ion-list>
+  <!--
+  <ion-list>
+    <ion-item *ngFor="#person of people">
+      <ion-avatar item-left>
+        <img src="{{person.picture.thumbnail}}">
+      </ion-avatar>
+      <h2>{{person.name.first}} {{person.name.last}}</h2>
+      <p>{{person.email}}</p>
+    </ion-item>
+  </ion-list>
+-->
+</ion-content>

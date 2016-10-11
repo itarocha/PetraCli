@@ -1,0 +1,12 @@
+<ion-menu [content]="content">
+  <ion-content>
+    <ion-list>
+      <button ion-item menuClose (click)="onMenu(home)">Home</button>
+      <button *ngIf="rep.selecionouEmpresa" ion-item menuClose (click)="onMenu(secoes)">Seções</button>
+      <button *ngIf="rep.selecionouEmpresa" ion-item menuClose (click)="onMenu(funcoes)">Funções</button>
+      <button ion-item menuClose (click)="onMenu(empresas)">Selecionar Empresa</button>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+<ion-nav #content [root]="rootPage"></ion-nav>

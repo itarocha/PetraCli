@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-navbar primary>
+    <ion-title>
+      <center><img class="title-image" src="images/logo.png" /></center>
+    </ion-title>
+    <button menuToggle><ion-icon name="menu"></ion-icon></button>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="home">
+  <h2 *ngIf="rep.selecionouEmpresa">
+    {{rep.nomemp}}
+  </h2>
+
+
+  <teste-itamar>Loading...</teste-itamar>
+
+
+  <h2 *ngIf="!rep.selecionouEmpresa">
+    Não há nenhuma empresa selecionada
+  </h2>
+
+  <button *ngIf="!rep.selecionouEmpresa" itamar (click)="onMenu(empresas)">Selecionar Empresa</button>
+  <button *ngIf="rep.selecionouEmpresa" itamar (click)="onMenu(empresas)">Trocar Empresa</button>
+  <button *ngIf="rep.selecionouEmpresa" itamar (click)="onMenu(secoes)">Seções</button>
+  <button *ngIf="rep.selecionouEmpresa" itamar (click)="onMenu(funcoes)">Funções</button>
+
+  <button primary>Primary</button>
+  <button secondary>Secondary</button>
+  <button danger>Danger</button>
+  <button light>Light</button>
+  <button dark>Dark</button>
+
+</ion-content>

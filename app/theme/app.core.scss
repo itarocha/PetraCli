@@ -1,0 +1,39 @@
+// http://ionicframework.com/docs/v2/theming/
+
+.the-background-image {
+    background-image: url(https://ununsplash.imgix.net/photo-1421091242698-34f6ad7fc088?fit=crop&fm=jpg&h=650&q=75&w=950);
+    background-size: cover;
+    background-position: center;
+    height: 50vw;
+}
+
+.the-content {
+    background-color: white;
+    position: absolute;
+}
+
+
+
+// App Shared Imports
+// --------------------------------------------------
+// These are the imports which make up the design of this app.
+// By default each design mode includes these shared imports.
+// App Shared Sass variables belong in app.variables.scss.
+
+@import "../pages/about/about";
+
+@import "../pages/contact/contact";
+
+@import "../pages/home/home";
+
+@import "../pages/menu/menu";
+
+@import "../pages/empresas/empresas";
+
+@import "../pages/secoes/secoes";
+
+@import "../pages/funcoes/funcoes";
+
+@import "../pages/funcionarios/funcionarios";
+
+@import "../pages/login/login";
